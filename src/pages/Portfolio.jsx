@@ -30,6 +30,13 @@ function Portfolio() {
         "Corporate web platform focused on usability, responsive layouts and professional business presentation.",
     },
     {
+      name: "Pelvicmotion",
+      url: "https://pelvicmotion.nl/",
+      category: "Healthcare Website",
+      description:
+        "Professional healthcare website focused on pelvic health services, providing visitors with information about treatments and specialized care.",
+    },
+    {
       name: "Tile & Tools",
       url: "https://www.tilertools.nl",
       category: "E-commerce Website",

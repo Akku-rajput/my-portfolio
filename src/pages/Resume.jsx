@@ -77,6 +77,10 @@ function Resume() {
       url: "https://www.bunzl.eu/",
     },
     {
+      name: "Pelvicmotion",
+      url: "https://pelvicmotion.nl/",
+    },
+    {
       name: "Tile & Tools",
       url: "https://www.tilertools.nl/",
     },
