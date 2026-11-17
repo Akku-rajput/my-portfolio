@@ -3,18 +3,22 @@ import "../assets/Portfolio.css";
 
 function Resume() {
   const skills = [
+    "Core PHP",
     "WordPress Development",
+    "Custom WordPress Themes",
+    "Custom WordPress Plugins",
+    "Elementor",
+    "WooCommerce",
     "Shopify Development",
-    "PHP",
     "HTML5",
     "CSS3",
     "JavaScript",
     "jQuery",
     "React.js",
+    "MySQL",
+    "Responsive Web Design",
     "Website Speed Optimization",
     "Technical SEO",
-    "Responsive Web Design",
-    "E-commerce Development",
   ];
 
   const projects = [
@@ -23,7 +27,7 @@ function Resume() {
       url: "https://www.bunzl.eu/",
     },
     {
-      name: "Tile R Tools",
+      name: "Tile & Tools",
       url: "https://www.tilertools.nl/",
     },
     {
@@ -48,204 +52,203 @@ function Resume() {
     },
   ];
 
+  const expertise = [
+    "Core PHP development and backend customization.",
+    "Custom WordPress theme development and customization.",
+    "Custom WordPress plugin development.",
+    "Elementor website development and customization.",
+    "WooCommerce functionality and e-commerce development.",
+    "Shopify theme customization and store development.",
+    "MySQL database integration and management.",
+    "Website maintenance, debugging and troubleshooting.",
+    "Responsive website development for all screen sizes.",
+    "Website speed and performance optimization.",
+  ];
+
   return (
-    <div className="resume-page">
+    <main className="resume-wrapper">
 
-      {/* HEADER */}
+      <div className="resume-page">
 
-      <div className="resume-header">
-        <h1>Akanksha Singh</h1>
+        {/* HEADER */}
 
-        <h3>
-          Senior Web Developer | WordPress & Shopify Expert
-        </h3>
+        <header className="resume-header">
 
-        <p className="resume-skills-line">
-          6+ Years of Professional Experience
-        </p>
+          <p className="resume-kicker">
+            PROFESSIONAL RESUME
+          </p>
 
-        <div className="personal-details">
+          <h1>Akanksha Singh</h1>
 
-          <p>
-            <strong>Mobile:</strong>
+          <h2>
+            Senior PHP & WordPress Developer
+          </h2>
+
+          <p className="resume-experience">
+            6 Years of Professional Experience
+          </p>
+
+          <div className="resume-contact">
+
             <a href="tel:+918299153078">
               +91 8299153078
             </a>
-          </p>
 
-          <p>
-            <strong>Email:</strong>
             <a href="mailto:as0122592@gmail.com">
               as0122592@gmail.com
             </a>
-          </p>
 
-          <p>
-            <strong>GitHub:</strong>
             <a
               href="https://github.com/Akku-rajput"
               target="_blank"
               rel="noopener noreferrer"
             >
-              github.com/Akku-rajput
+              GitHub Profile
             </a>
-          </p>
 
-          <p>
-            <strong>Portfolio:</strong>
             <a
-              href="http://localhost:5173/"
+              href="https://jocular-platypus-2e7a85.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              My Portfolio
+              Portfolio Website
             </a>
-          </p>
 
-          <p>
-            <strong>Location:</strong>
+          </div>
+
+          <p className="resume-location">
             Mohali, Punjab, India
           </p>
 
-        </div>
-      </div>
+        </header>
 
-      <hr />
+        {/* SUMMARY */}
 
-      {/* PROFESSIONAL SUMMARY */}
+        <section className="resume-section">
 
-      <section className="resume-section">
-        <h2>Professional Summary</h2>
+          <h2>Professional Summary</h2>
 
-        <p>
-          Results-driven Senior Web Developer with 6+
-          years of professional experience in website
-          development, customization and maintenance.
+          <p>
+            Results-driven PHP and WordPress Developer
+            with 6 years of professional experience in
+            website development, customization and
+            maintenance.
 
-          Specialized in WordPress, Shopify and PHP
-          development, with strong knowledge of HTML5,
-          CSS3, JavaScript and jQuery.
+            Specialized in Core PHP, WordPress custom
+            theme development, custom plugin development,
+            Elementor and WooCommerce.
 
-          Experienced in developing responsive websites,
-          e-commerce platforms, customizing themes,
-          integrating website functionalities and
-          maintaining existing web applications.
+            Experienced in building and customizing
+            responsive websites, developing website
+            functionalities, integrating third-party
+            services and troubleshooting technical issues.
 
-          Skilled in website speed optimization,
-          performance improvements and technical SEO
-          fundamentals, including website structure,
-          indexing, crawlability and website performance.
+            Also experienced in Shopify development,
+            frontend technologies, website performance
+            optimization and technical SEO fundamentals.
 
-          Passionate about building user-friendly,
-          responsive and high-performance websites.
-        </p>
-      </section>
+            Focused on delivering maintainable code,
+            reliable functionality and user-friendly
+            digital experiences.
+          </p>
 
-      {/* TECHNICAL SKILLS */}
+        </section>
 
-      <section className="resume-section">
-        <h2>Technical Skills</h2>
+        {/* TECHNICAL SKILLS */}
 
-        <div className="resume-skills">
-          {skills.map((skill) => (
-            <span key={skill}>{skill}</span>
-          ))}
-        </div>
-      </section>
+        <section className="resume-section">
 
-      {/* CORE EXPERTISE */}
+          <h2>Technical Skills</h2>
 
-      <section className="resume-section">
-        <h2>Core Expertise</h2>
+          <div className="resume-skills">
 
-        <ul>
-          <li>
-            WordPress website development and
-            custom theme development.
-          </li>
+            {skills.map((skill) => (
+              <span key={skill}>
+                {skill}
+              </span>
+            ))}
 
-          <li>
-            Shopify store development and
-            theme customization.
-          </li>
+          </div>
 
-          <li>
-            PHP development and website customization.
-          </li>
+        </section>
 
-          <li>
-            Website speed and performance optimization.
-          </li>
+        {/* CORE EXPERTISE */}
 
-          <li>
-            Technical SEO and website structure
-            optimization.
-          </li>
+        <section className="resume-section">
 
-          <li>
-            Responsive website development for
-            desktop, tablet and mobile devices.
-          </li>
+          <h2>Core Competencies</h2>
 
-          <li>
-            Website maintenance, troubleshooting
-            and bug fixing.
-          </li>
+          <ul>
+            {expertise.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
 
-          <li>
-            E-commerce development and
-            functionality improvements.
-          </li>
+        </section>
 
-          <li>
-            Frontend development using HTML,
-            CSS, JavaScript and jQuery.
-          </li>
-        </ul>
-      </section>
+        {/* PROJECTS */}
 
-      {/* PROJECTS */}
+        <section className="resume-section">
 
-      <section className="resume-section">
-        <h2>Selected Live Projects</h2>
+          <h2>Selected Live Projects</h2>
 
-        <div className="resume-projects">
-          {projects.map((project) => (
-            <div
-              className="resume-project"
-              key={project.name}
-            >
-              <strong>{project.name}</strong>
+          <div className="resume-projects">
 
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
+            {projects.map((project) => (
+              <div
+                className="resume-project"
+                key={project.name}
               >
-                {project.url}
-              </a>
-            </div>
-          ))}
+
+                <strong>{project.name}</strong>
+
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {project.url}
+                </a>
+
+              </div>
+            ))}
+
+          </div>
+
+          <p className="resume-note">
+            Selected websites from my professional
+            project portfolio.
+          </p>
+
+        </section>
+
+        {/* EDUCATION */}
+
+        <section className="resume-section">
+
+          <h2>Education</h2>
+
+          <h3>B.Sc. in Computer Applications</h3>
+
+        </section>
+
+        {/* PRINT */}
+
+        <div className="resume-actions">
+
+          <button onClick={() => window.print()}>
+            Download Resume / Save as PDF
+          </button>
+
+          <p>
+            Choose "Save as PDF" in the print dialog.
+          </p>
+
         </div>
-      </section>
 
-      {/* EDUCATION */}
-
-      <section className="resume-section">
-        <h2>Education</h2>
-
-        <h3>B.Sc. in Computer Applications</h3>
-      </section>
-
-      {/* DOWNLOAD BUTTON */}
-
-      <div className="resume-actions">
-        <button onClick={() => window.print()}>
-          Download Resume / Save as PDF
-        </button>
       </div>
 
-    </div>
+    </main>
   );
 }
 
