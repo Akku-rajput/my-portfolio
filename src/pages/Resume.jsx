@@ -1,6 +1,7 @@
 
 import "../assets/Portfolio.css";
 
+
 function Resume() {
   const skills = [
     "Core PHP",
@@ -19,6 +20,55 @@ function Resume() {
     "Responsive Web Design",
     "Website Speed Optimization",
     "Technical SEO",
+  ];
+
+  const expertise = [
+    "Core PHP development and backend customization.",
+    "Custom WordPress theme development and customization.",
+    "Custom WordPress plugin development.",
+    "Elementor website development and customization.",
+    "WooCommerce functionality and e-commerce development.",
+    "Shopify theme customization and store development.",
+    "MySQL database integration and management.",
+    "Website maintenance, debugging and troubleshooting.",
+    "Responsive website development for all screen sizes.",
+    "Website speed and performance optimization.",
+  ];
+
+  const experience = [
+    {
+      designation: "Senior Web Developer",
+      company: "Techknow Deviser Professional Pvt. Ltd.",
+      duration: "2021 – Present",
+      responsibilities: [
+        "Developing and maintaining professional websites using WordPress and PHP.",
+        "Building and customizing WordPress themes and plugins.",
+        "Developing custom website functionalities using Core PHP.",
+        "Creating and customizing websites using Elementor.",
+        "Working on responsive layouts, website maintenance and bug fixing.",
+        "Improving website performance and user experience.",
+      ],
+    },
+    {
+      designation: "PHP Developer",
+      company: "Ominous Solution",
+      duration: "July 2021 – December 2021",
+      responsibilities: [
+        "Developed and customized websites using PHP.",
+        "Worked on website functionality and backend development.",
+        "Performed website troubleshooting and maintenance.",
+      ],
+    },
+    {
+      designation: "Data Entry Operator",
+      company: "Sankalp Management Services",
+      duration: "2019 – March 2020",
+      responsibilities: [
+        "Handled data entry and record management.",
+        "Maintained and updated business records.",
+        "Performed data verification and documentation.",
+      ],
+    },
   ];
 
   const projects = [
@@ -52,19 +102,6 @@ function Resume() {
     },
   ];
 
-  const expertise = [
-    "Core PHP development and backend customization.",
-    "Custom WordPress theme development and customization.",
-    "Custom WordPress plugin development.",
-    "Elementor website development and customization.",
-    "WooCommerce functionality and e-commerce development.",
-    "Shopify theme customization and store development.",
-    "MySQL database integration and management.",
-    "Website maintenance, debugging and troubleshooting.",
-    "Responsive website development for all screen sizes.",
-    "Website speed and performance optimization.",
-  ];
-
   return (
     <main className="resume-wrapper">
 
@@ -85,7 +122,7 @@ function Resume() {
           </h2>
 
           <p className="resume-experience">
-            6 Years of Professional Experience
+            6+ Years of Professional Experience
           </p>
 
           <div className="resume-contact">
@@ -122,35 +159,77 @@ function Resume() {
 
         </header>
 
-        {/* SUMMARY */}
+        {/* PROFESSIONAL SUMMARY */}
 
         <section className="resume-section">
 
           <h2>Professional Summary</h2>
 
           <p>
-            Results-driven PHP and WordPress Developer
-            with 6 years of professional experience in
-            website development, customization and
-            maintenance.
+            Results-driven Senior PHP and WordPress Developer
+            with 6+ years of professional experience in website
+            development, customization and maintenance.
 
-            Specialized in Core PHP, WordPress custom
-            theme development, custom plugin development,
-            Elementor and WooCommerce.
+            Specialized in Core PHP, WordPress custom theme
+            development, custom plugin development, Elementor
+            and WooCommerce.
 
-            Experienced in building and customizing
-            responsive websites, developing website
-            functionalities, integrating third-party
-            services and troubleshooting technical issues.
+            Experienced in building responsive websites,
+            developing custom functionalities, integrating
+            third-party services and troubleshooting technical
+            issues.
 
-            Also experienced in Shopify development,
-            frontend technologies, website performance
-            optimization and technical SEO fundamentals.
+            Also experienced in Shopify development, frontend
+            technologies, website performance optimization
+            and technical SEO fundamentals.
 
-            Focused on delivering maintainable code,
-            reliable functionality and user-friendly
-            digital experiences.
+            Focused on delivering maintainable code, reliable
+            functionality and user-friendly digital experiences.
           </p>
+
+        </section>
+
+        {/* PROFESSIONAL EXPERIENCE */}
+
+        <section className="resume-section">
+
+          <h2>Professional Experience</h2>
+
+          <div className="experience-list">
+
+            {experience.map((job, index) => (
+
+              <div
+                className="experience-item"
+                key={index}
+              >
+
+                <div className="experience-heading">
+
+                  <div>
+                    <h3>{job.designation}</h3>
+                    <p className="company-name">
+                      {job.company}
+                    </p>
+                  </div>
+
+                  <span className="experience-duration">
+                    {job.duration}
+                  </span>
+
+                </div>
+
+                <ul>
+                  {job.responsibilities.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+
+              </div>
+
+            ))}
+
+          </div>
 
         </section>
 
@@ -163,9 +242,7 @@ function Resume() {
           <div className="resume-skills">
 
             {skills.map((skill) => (
-              <span key={skill}>
-                {skill}
-              </span>
+              <span key={skill}>{skill}</span>
             ))}
 
           </div>
@@ -195,6 +272,7 @@ function Resume() {
           <div className="resume-projects">
 
             {projects.map((project) => (
+
               <div
                 className="resume-project"
                 key={project.name}
@@ -211,6 +289,7 @@ function Resume() {
                 </a>
 
               </div>
+
             ))}
 
           </div>
@@ -232,7 +311,35 @@ function Resume() {
 
         </section>
 
-        {/* PRINT */}
+        {/* PERSONAL DETAILS */}
+
+        <section className="resume-section">
+
+          <h2>Personal Details</h2>
+
+          <div className="personal-details-grid">
+
+            <p>
+              <strong>Full Name:</strong> Akanksha Singh
+            </p>
+
+            <p>
+              <strong>Location:</strong> Mohali, Punjab, India
+            </p>
+
+            <p>
+              <strong>Nationality:</strong> Indian
+            </p>
+
+            <p>
+              <strong>Address:</strong> Mohali, Punjab, India
+            </p>
+
+          </div>
+
+        </section>
+
+        {/* DOWNLOAD */}
 
         <div className="resume-actions">
 
@@ -240,9 +347,7 @@ function Resume() {
             Download Resume / Save as PDF
           </button>
 
-          <p>
-            Choose "Save as PDF" in the print dialog.
-          </p>
+          <p>Choose Save as PDF in the print dialog.</p>
 
         </div>
 
