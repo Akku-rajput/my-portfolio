@@ -939,9 +939,12 @@
     box-shadow: none;
   }
 
+
+  .navbar,
   .resume-actions {
     display: none !important;
   }
+
 
   .resume-section,
   .resume-project {
