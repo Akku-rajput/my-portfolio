@@ -52,7 +52,7 @@ function Resume() {
     {
       designation: "PHP Developer",
       company: "Ominous Solution",
-      duration: "July 2021 – December 2021",
+      duration: "July 2020 – December 2020",
       responsibilities: [
         "Developed and customized websites using PHP.",
         "Worked on website functionality and backend development.",
@@ -62,7 +62,7 @@ function Resume() {
     {
       designation: "Data Entry Operator",
       company: "Sankalp Management Services",
-      duration: "2019 – March 2020",
+      duration: "April 2019 – March 2020",
       responsibilities: [
         "Handled data entry and record management.",
         "Maintained and updated business records.",
@@ -307,7 +307,7 @@ function Resume() {
 
           <h2>Education</h2>
 
-          <h3>B.Sc. in Computer Applications</h3>
+          <h3>B.Sc. in Computer Applications </h3>
 
         </section>
 
@@ -332,7 +332,7 @@ function Resume() {
             </p>
 
             <p>
-              <strong>Address:</strong> Mohali, Punjab, India
+              <strong>Address:</strong> #65 , gali no. 4 malhotra colony Rupnagar ,  Punjab, India
             </p>
 
           </div>
